@@ -1,0 +1,17 @@
+Configuración de motores
+========================
+
+vel_1_max: 30 rad/s
+vel_2_max: 30 rad/s
+vel_3_max: 30 rad/s
+vel_4_max: 30 rad/s
+vel_5_max: 30 rad/s
+
+acel_1_max: 10 rad/s²
+acel_2_max: 10 rad/s²
+acel_3_max: 10 rad/s²
+acel_4_max: 10 rad/s²
+acel_5_max: 10 rad/s²
+
+tiempo: 1 s
+
