@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Robot5G.SLDASM">
+  <link
+    name="Base">
+    <inertial>
+      <origin
+        xyz="0.48676 9.482E-06 -0.70598"
+        rpy="0 0 0" />
+      <mass
+        value="21.415" />
+      <inertia
+        ixx="0.48442"
+        ixy="-2.0322E-14"
+        ixz="-3.9491E-10"
+        iyy="0.48443"
+        iyz="8.6589E-06"
+        izz="0.13467" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot5G.SLDASM/meshes/Base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot5G.SLDASM/meshes/Base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Eslabon_1">
+    <inertial>
+      <origin
+        xyz="0.00061927 2.4339E-08 -0.051532"
+        rpy="0 0 0" />
+      <mass
+        value="0.083291" />
+      <inertia
+        ixx="3.3019E-05"
+        ixy="3.5212E-13"
+        ixz="-1.59E-08"
+        iyy="3.5105E-05"
+        iyz="-7.7326E-09"
+        izz="1.7666E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot5G.SLDASM/meshes/Eslabon_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot5G.SLDASM/meshes/Eslabon_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Motor_1"
+    type="revolute">
+    <origin
+      xyz="0.48676 0 -0.22168"
+      rpy="0 0 -2.9757" />
+    <parent
+      link="Base" />
+    <child
+      link="Eslabon_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Eslabon_2">
+    <inertial>
+      <origin
+        xyz="0.00032037 0.11787 0.010216"
+        rpy="0 0 0" />
+      <mass
+        value="0.10279" />
+      <inertia
+        ixx="4.0086E-05"
+        ixy="-1.5899E-08"
+        ixz="-3.247E-12"
+        iyy="2.3769E-05"
+        iyz="7.7327E-09"
+        izz="4.5429E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot5G.SLDASM/meshes/Eslabon_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot5G.SLDASM/meshes/Eslabon_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Motor_2"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-2.4749 0 0" />
+    <parent
+      link="Eslabon_1" />
+    <child
+      link="Eslabon_2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Eslabon_3">
+    <inertial>
+      <origin
+        xyz="-0.00091761 0.12301 2.0313E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.10663" />
+      <inertia
+        ixx="4.659E-05"
+        ixy="1.5902E-08"
+        ixz="-2.3542E-12"
+        iyy="2.41E-05"
+        iyz="-7.7328E-09"
+        izz="5.1608E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot5G.SLDASM/meshes/Eslabon_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot5G.SLDASM/meshes/Eslabon_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Motor_3"
+    type="revolute">
+    <origin
+      xyz="0 0.17904 0.010216"
+      rpy="-0.76414 0 0" />
+    <parent
+      link="Eslabon_2" />
+    <child
+      link="Eslabon_3" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Eslabon_4">
+    <inertial>
+      <origin
+        xyz="0.000374705694920985 0.0723690967898943 -2.60933163964694E-10"
+        rpy="0 0 0" />
+      <mass
+        value="0.123568195766219" />
+      <inertia
+        ixx="2.37751611649657E-05"
+        ixy="-2.13392160210239E-08"
+        ixz="2.62558153734513E-14"
+        iyy="5.69082725525632E-05"
+        iyz="-1.66014981438627E-13"
+        izz="5.76316977977271E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot5G.SLDASM/meshes/Eslabon_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot5G.SLDASM/meshes/Eslabon_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Motor_4"
+    type="revolute">
+    <origin
+      xyz="0 0.20038 -0.0034543"
+      rpy="-2.7889 0 -3.1416" />
+    <parent
+      link="Eslabon_3" />
+    <child
+      link="Eslabon_4" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Garra_P1">
+    <inertial>
+      <origin
+        xyz="0.0126700351226644 0.0177616891580821 -0.0196330371730266"
+        rpy="0 0 0" />
+      <mass
+        value="0.0372211324668284" />
+      <inertia
+        ixx="6.31174008552406E-06"
+        ixy="-1.93064065620486E-06"
+        ixz="1.71439433567917E-08"
+        iyy="7.45803328253789E-06"
+        iyz="1.27050475801116E-08"
+        izz="6.56502742204427E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot5G.SLDASM/meshes/Garra_P1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot5G.SLDASM/meshes/Garra_P1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Motor_5"
+    type="revolute">
+    <origin
+      xyz="0.0107 0.13999 0"
+      rpy="-0.70277 0.7172 -0.91087" />
+    <parent
+      link="Eslabon_4" />
+    <child
+      link="Garra_P1" />
+    <axis
+      xyz="0.59541 -0.80342 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Garra_P2_1">
+    <inertial>
+      <origin
+        xyz="-2.05746530923534E-12 -3.72146757854352E-13 0.00624644040331784"
+        rpy="0 0 0" />
+      <mass
+        value="0.00121291551647591" />
+      <inertia
+        ixx="3.769105052066E-08"
+        ixy="3.99131189169087E-20"
+        ixz="7.6786349082685E-20"
+        iyy="3.87089265404231E-08"
+        iyz="5.09195841475393E-20"
+        izz="7.12411206791943E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot5G.SLDASM/meshes/Garra_P2_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot5G.SLDASM/meshes/Garra_P2_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Motor_6"
+    type="revolute">
+    <origin
+      xyz="0.0057125 0.014881 -0.005"
+      rpy="0 0 0" />
+    <parent
+      link="Garra_P1" />
+    <child
+      link="Garra_P2_1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Aux_1_1">
+    <inertial>
+      <origin
+        xyz="0.000500042878986862 -0.00900000260796199 -0.00397667506552768"
+        rpy="0 0 0" />
+      <mass
+        value="0.00115155367561675" />
+      <inertia
+        ixx="1.47594409742263E-07"
+        ixy="4.12031647666591E-14"
+        ixz="-3.36034846930511E-09"
+        iyy="1.86128977276867E-07"
+        iyz="3.22003422384585E-14"
+        izz="3.93022723623027E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot5G.SLDASM/meshes/Aux_1_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot5G.SLDASM/meshes/Aux_1_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="motor_P2_1"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5708 0 -3.1416" />
+    <parent
+      link="Garra_P2_1" />
+    <child
+      link="Aux_1_1" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="G1">
+    <inertial>
+      <origin
+        xyz="0.000914821632117979 -0.00899999999947837 0.00216682871923912"
+        rpy="0 0 0" />
+      <mass
+        value="0.000238316331354724" />
+      <inertia
+        ixx="2.9024331377828E-08"
+        ixy="-2.79897239772631E-21"
+        ixz="3.10776583363798E-09"
+        iyy="2.96198622955456E-08"
+        iyz="3.1853794811228E-20"
+        izz="7.5440847195405E-10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot5G.SLDASM/meshes/G1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot5G.SLDASM/meshes/G1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="M_G1"
+    type="fixed">
+    <origin
+      xyz="0.016172 -0.016 -0.043903"
+      rpy="0 1.1162 3.1416" />
+    <parent
+      link="Aux_1_1" />
+    <child
+      link="G1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Garra_P2_2">
+    <inertial>
+      <origin
+        xyz="-1.52700074806944E-12 0.00200000000066447 -1.27625687795785E-12"
+        rpy="0 0 0" />
+      <mass
+        value="0.000885929128312322" />
+      <inertia
+        ixx="3.1844753933113E-08"
+        ixy="8.25900550555102E-20"
+        ixz="-1.9951596374779E-20"
+        iyy="6.41167644671141E-08"
+        iyz="3.34933701828846E-20"
+        izz="3.2862629952876E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot5G.SLDASM/meshes/Garra_P2_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot5G.SLDASM/meshes/Garra_P2_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="M6_aux_1"
+    type="revolute">
+    <origin
+      xyz="-0.015859 -0.0011055 0"
+      rpy="1.5708 0 0.99746" />
+    <parent
+      link="Garra_P1" />
+    <child
+      link="Garra_P2_2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Aux_2_1">
+    <inertial>
+      <origin
+        xyz="0.000454043195986409 -0.00900000146273069 -0.0039015866434623"
+        rpy="0 0 0" />
+      <mass
+        value="0.00115155807024913" />
+      <inertia
+        ixx="1.48644521015698E-07"
+        ixy="2.63383444330356E-14"
+        ixz="-3.29831198582964E-09"
+        iyy="1.86860839246516E-07"
+        iyz="3.03200985825867E-14"
+        izz="3.89840258346653E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot5G.SLDASM/meshes/Aux_2_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot5G.SLDASM/meshes/Aux_2_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="motor_P2_2"
+    type="revolute">
+    <origin
+      xyz="0 0.013 0"
+      rpy="0 0 0" />
+    <parent
+      link="Garra_P2_2" />
+    <child
+      link="Aux_2_1" />
+    <axis
+      xyz="0 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="G2">
+    <inertial>
+      <origin
+        xyz="0.000914821630404183 -0.00900000000313078 0.00216682871723506"
+        rpy="0 0 0" />
+      <mass
+        value="0.000238316331354725" />
+      <inertia
+        ixx="2.90243313779264E-08"
+        ixy="-6.37056703049409E-21"
+        ixz="3.10776583318963E-09"
+        iyy="2.96198622955454E-08"
+        iyz="3.04460174191937E-20"
+        izz="7.54408471855481E-10" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot5G.SLDASM/meshes/G2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot5G.SLDASM/meshes/G2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="M_G2"
+    type="fixed">
+    <origin
+      xyz="0.013315 -0.02 -0.048112"
+      rpy="0 0.83265 3.1416" />
+    <parent
+      link="Aux_2_1" />
+    <child
+      link="G2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
